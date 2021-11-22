@@ -8,12 +8,29 @@ namespace hra_s_čísly
         {
             Random random = new Random();
             bool neuhodl = true;
-            Console.Write("Napiš číslo, které bude muset PC uhádnout");
+            Console.WriteLine("Napiš číslo, které bude muset PC uhádnout");
             int cislo = int.Parse(Console.ReadLine());
             while (neuhodl)
             {
                 int randomCislo = random.Next(1, 50);
                 Console.WriteLine(randomCislo);
+
+                if (randomCislo > cislo)
+                {
+                   
+                    Console.WriteLine("špatně, zadej menší číslo");
+                    
+
+                }
+
+                if (randomCislo < cislo)
+                {
+                    Console.WriteLine("špatně, zadej větší číslo");
+                }
+
+
+
+
 
                 if(randomCislo ==cislo)
                 {
@@ -22,10 +39,10 @@ namespace hra_s_čísly
 
 
                 }
-                else
-                {
-                    Console.WriteLine("počítači neuhodl si číslo");
-                }
+                
+                
+                    
+                
                 Console.ReadKey();
             }
         }
