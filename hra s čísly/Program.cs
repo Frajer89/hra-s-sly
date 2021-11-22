@@ -28,22 +28,22 @@ namespace hra_s_čísly
                     Console.WriteLine("špatně, zadej větší číslo");
                 }
 
-
-
-
-
-                if(randomCislo ==cislo)
+                if (randomCislo == cislo)
                 {
                     Console.WriteLine("počítači uhodl si číslo");
                     neuhodl = false;
 
 
                 }
-                
-                
-                    
-                
+
+
                 Console.ReadKey();
+
+
+
+
+
+                
             }
         }
     }
