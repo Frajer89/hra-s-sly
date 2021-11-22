@@ -15,18 +15,8 @@ namespace hra_s_čísly
                 int randomCislo = random.Next(1, 50);
                 Console.WriteLine(randomCislo);
 
-                if (randomCislo > cislo)
-                {
-                   
-                    Console.WriteLine("špatně, zadej menší číslo");
-                    
-
-                }
-
-                if (randomCislo < cislo)
-                {
-                    Console.WriteLine("špatně, zadej větší číslo");
-                }
+                
+                
 
                 if (randomCislo == cislo)
                 {
@@ -34,6 +24,11 @@ namespace hra_s_čísly
                     neuhodl = false;
 
 
+                }
+
+                else
+                {
+                    Console.WriteLine("počítači neuhodl si číslo");
                 }
 
 
